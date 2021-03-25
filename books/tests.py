@@ -1,9 +1,3 @@
-# drf-test-views
-If you're testing views directly using APIRequestFactory, the responses that are returned will not yet be rendered, as rendering of template responses is performed by Django's internal request-response cycle. In order to access response.content, you'll first need to render the response.
-
-
-
-`
 from rest_framework.test import APIRequestFactory
 from django.core.management import call_command
 from django.urls import reverse
@@ -35,5 +29,3 @@ class AccountTests(APITestCase):
                                format='json')
         _ = view(request)
         self.assertTrue(Book.objects.filter(title='Java Head First').exists())
-
-`

@@ -1,0 +1,11 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "C Plus Plus",
+      "author": "E Balaguruswami",
+      "published_on": "2021-03-25"
+    }
+  }
+]
